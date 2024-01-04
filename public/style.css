@@ -1,0 +1,136 @@
+* {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contenidor {
+    display: inline-block;
+    width: 33%;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px #01565F solid;
+    box-shadow: 0 10px 20px 0 #004E5A;
+    margin: 4px;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap: break-word; /* Evita que el contingut se surti */
+}
+
+.mapa {
+    width: 80%;
+    height: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #3E9D92;
+}
+
+h4 {
+    color: #01565F;
+}
+
+input {
+    height: 30px;
+    text-align: center;
+}
+
+button {
+    color: #004E5A;
+    background-color: #3E9D92;
+    height: 40px;
+}
+
+.show-button {
+    cursor: pointer;
+    color: #004E5A;
+}
+
+/* SECCIÓ RESERVAS */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #004E5A;
+    padding: 10px;
+}
+
+.center-menu {
+    flex-grow: 1;
+    text-align: center;
+    color: #3E9D92;
+    font-weight: bolder;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3E9D92;
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #004E5A;
+}
+
+/* SECCIÓ SALES/AULES/DESPATXOS */
+.columnas_sales {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sales, .aules, .despatxos {
+    margin: 20px; 
+}
+
+/* ESTILS PER AMAGAR Y MOSTRAR */
+.hidden {
+    display: none;
+    transition: display 0.5s ease;
+}
+
+.show-details {
+    display: block !important;
+}
+
+@media screen and (max-width: 768px) {
+    .contenidor {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .columnas_sales {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sales, .aules, .despatxos {
+        margin: 10px 0; /* Ajusta el marge per separar les sales verticalment */
+    }
+}

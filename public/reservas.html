@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reservas</title>
+</head>
+<body>
+        <!-- Menú -->
+        <nav>
+            <div class="center-menu">Reserva d'espais</div>
+            <div class="dropdown">
+            <button class="dropbtn">Territoris</button>
+            <div class="dropdown-content">
+                <a href="girona.html" target="_blank">Girona</a>
+                <a href="barcelona.html" target="_blank">Barcelona</a>
+                <a href="tarragona.html" target="_blank">Tarragona</a>
+                <a href="ebre.html" target="_blank">Terres de l'Ebre</a>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Formulari per crear una reserva -->
+        <div>
+            <h2>Crear Reserva</h2>
+            <label for="data_inici">Data inici</label>
+            <input type="date" id="data_inici" placeholder="Data d'inici (YYYY-MM-DD)">
+            <br><br>
+            <label for="data_fi">Data final</label>
+            <input type="date" id="data_fi" placeholder="Data final (YYYY-MM-DD)">
+            <br><br>
+            <label for="horari">Horari</label>
+            <input type="time" id="horari" placeholder="Horari (HH:MM:SS)">
+            <br><br>
+            <label for="disponibilitat">Disponibilitat</label>
+            <input type="text" id="disponibilitat" placeholder="Disponibilitat">
+            <br><br>
+            <label for="id">Identificador</label>
+            <input type="number" id="id" placeholder="ID">
+            <br><br>
+            <label for="id_salas">ID_Sala</label>
+            <input type="number" id="id_salas" placeholder="ID_Sala">
+            <br><br>
+            <label for="id_usuaris">ID_Usuari</label>
+            <input type="number" id="id_usuaris" placeholder="ID_Usuari">
+            <br><br>
+            <button onclick="crearReserva()">Crear</button>
+        </div>
+</body>
+<script src="./app.js"></script>
+</html>

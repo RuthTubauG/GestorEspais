@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Terres de l'Ebre</title>
+</head>
+<body>
+    <h2>Aquí tenim els següents centres;</h2>
+    <hr>
+    <br>
+    <!-- Direcció 1 -->
+    <div class="columnas_sales">
+        <i class="fa-solid fa-house fa-2xl"></i>&nbsp;
+        <p>Carrer de Barcelona, 73 <b>C.P 43870 Amposta</b></p>
+        <div class="sales">
+            <h4>Sales</h4>
+            <p>Sala 1 <button class="show-button" onclick="toggleDetails(this, 'sala1_1')">+</button></p>
+            <div class="hidden" id="sala1_1"></div>
+
+            <p>Sala 2 <button class="show-button" onclick="toggleDetails(this, 'sala2_1')">+</button></p>
+            <div class="hidden" id="sala2_1"></div>
+
+            <p>Sala 3 <button class="show-button" onclick="toggleDetails(this, 'sala3_1')">+</button></p>
+            <div class="hidden" id="sala3_1"></div>
+
+            <p>Sala 4 <button class="show-button" onclick="toggleDetails(this, 'sala4_1')">+</button></p>
+            <div class="hidden" id="sala4_1"></div>
+        </div>
+        <div class="aules">
+            <h4>Aules</h4>
+            <p>Aula 1 <button class="show-button" onclick="toggleDetails(this, 'aula1_1')">+</button></p>
+            <div class="hidden" id="aula1_1"></div>
+
+            <p>Aula 2 <button class="show-button" onclick="toggleDetails(this, 'aula2_1')">+</button></p>
+            <div class="hidden" id="aula2_1"></div>
+
+            <p>Aula 3 <button class="show-button" onclick="toggleDetails(this, 'aula3_1')">+</button></p>
+            <div class="hidden" id="aula3_1"></div>
+
+            <p>Aula 4 <button class="show-button" onclick="toggleDetails(this, 'aula4_1')">+</button></p>
+            <div class="hidden" id="aula4_1"></div>
+        </div>
+        <div class="despatxos">
+            <h4>Despatxos</h4>
+            <p>Despatx 1 <button class="show-button" onclick="toggleDetails(this, 'despatx1_1')">+</button></p>
+            <div class="hidden" id="despatx1_1"></div>
+
+            <p>Despatx 2 <button class="show-button" onclick="toggleDetails(this, 'despatx2_1')">+</button></p>
+            <div class="hidden" id="despatx2_1"></div>
+
+            <p>Despatx 3 <button class="show-button" onclick="toggleDetails(this, 'despatx3_1')">+</button></p>
+            <div class="hidden" id="despatx3_1"></div>
+
+            <p>Despatx 4 <button class="show-button" onclick="toggleDetails(this, 'despatx4_1')">+</button></p>
+            <div class="hidden" id="despatx4_1"></div>
+        </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <!-- Direcció 2 -->
+    <div class="columnas_sales">
+        <i class="fa-solid fa-house fa-2xl"></i>&nbsp;
+        <p>Av. Catalunya, 103 baixos <b>C.P 43870 Amposta</b></p>
+        <div class="sales">
+            <h4>Sales</h4>
+            <p>Sala 1 <button class="show-button" onclick="toggleDetails(this, 'sala1_2')">+</button></p>
+            <div class="hidden" id="sala1_2"></div>
+
+            <p>Sala 2 <button class="show-button" onclick="toggleDetails(this, 'sala2_2')">+</button></p>
+            <div class="hidden" id="sala2_2"></div>
+
+            <p>Sala 3 <button class="show-button" onclick="toggleDetails(this, 'sala3_2')">+</button></p>
+            <div class="hidden" id="sala3_2"></div>
+
+            <p>Sala 4 <button class="show-button" onclick="toggleDetails(this, 'sala4_2')">+</button></p>
+            <div class="hidden" id="sala4_2"></div>
+        </div>
+        <div class="aules">
+            <h4>Aules</h4>
+            <p>Aula 1 <button class="show-button" onclick="toggleDetails(this, 'aula1_2')">+</button></p>
+            <div class="hidden" id="aula1_2"></div>
+
+            <p>Aula 2 <button class="show-button" onclick="toggleDetails(this, 'aula2_2')">+</button></p>
+            <div class="hidden" id="aula2_2"></div>
+
+            <p>Aula 3 <button class="show-button" onclick="toggleDetails(this, 'aula3_2')">+</button></p>
+            <div class="hidden" id="aula3_2"></div>
+
+            <p>Aula 4 <button class="show-button" onclick="toggleDetails(this, 'aula4_2')">+</button></p>
+            <div class="hidden" id="aula4_2"></div>
+        </div>
+        <div class="despatxos">
+            <h4>Despatxos</h4>
+            <p>Despatx 1 <button class="show-button" onclick="toggleDetails(this, 'despatx1_2')">+</button></p>
+            <div class="hidden" id="despatx1_2"></div>
+
+            <p>Despatx 2 <button class="show-button" onclick="toggleDetails(this, 'despatx2_2')">+</button></p>
+            <div class="hidden" id="despatx2_2"></div>
+
+            <p>Despatx 3 <button class="show-button" onclick="toggleDetails(this, 'despatx3_2')">+</button></p>
+            <div class="hidden" id="despatx3_2"></div>
+
+            <p>Despatx 4 <button class="show-button" onclick="toggleDetails(this, 'despatx4_2')">+</button></p>
+            <div class="hidden" id="despatx4_2"></div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <!-- Direcció 3 -->
+    <div class="columnas_sales">
+        <i class="fa-solid fa-house fa-2xl"></i>&nbsp;
+        <p>Av. de Catalunya, 83 <b>C.P 43500 Tortosa</b></p>
+        <div class="sales">
+            <h4>Sales</h4>
+            <p>Sala 1 <button class="show-button" onclick="toggleDetails(this, 'sala1_3')">+</button></p>
+            <div class="hidden" id="sala1_3"></div>
+
+            <p>Sala 2 <button class="show-button" onclick="toggleDetails(this, 'sala2_3')">+</button></p>
+            <div class="hidden" id="sala2_3"></div>
+
+            <p>Sala 3 <button class="show-button" onclick="toggleDetails(this, 'sala3_3')">+</button></p>
+            <div class="hidden" id="sala3_3"></div>
+
+            <p>Sala 4 <button class="show-button" onclick="toggleDetails(this, 'sala4_3')">+</button></p>
+            <div class="hidden" id="sala4_3"></div>
+        </div>
+        <div class="aules">
+            <h4>Aules</h4>
+            <p>Aula 1 <button class="show-button" onclick="toggleDetails(this, 'aula1_3')">+</button></p>
+            <div class="hidden" id="aula1_3"></div>
+
+            <p>Aula 2 <button class="show-button" onclick="toggleDetails(this, 'aula2_3')">+</button></p>
+            <div class="hidden" id="aula2_3"></div>
+
+            <p>Aula 3 <button class="show-button" onclick="toggleDetails(this, 'aula3_3')">+</button></p>
+            <div class="hidden" id="aula3_3"></div>
+
+            <p>Aula 4 <button class="show-button" onclick="toggleDetails(this, 'aula4_3')">+</button></p>
+            <div class="hidden" id="aula4_3"></div>
+        </div>
+        <div class="despatxos">
+            <h4>Despatxos</h4>
+            <p>Despatx 1 <button class="show-button" onclick="toggleDetails(this, 'despatx1_3')">+</button></p>
+            <div class="hidden" id="despatx1_3"></div>
+
+            <p>Despatx 2 <button class="show-button" onclick="toggleDetails(this, 'despatx2_3')">+</button></p>
+            <div class="hidden" id="despatx2_3"></div>
+
+            <p>Despatx 3 <button class="show-button" onclick="toggleDetails(this, 'despatx3_3')">+</button></p>
+            <div class="hidden" id="despatx3_3"></div>
+
+            <p>Despatx 4 <button class="show-button" onclick="toggleDetails(this, 'despatx4_3')">+</button></p>
+            <div class="hidden" id="despatx4_3"></div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <!-- Direcció 4 -->
+    <div class="columnas_sales">
+        <i class="fa-solid fa-house fa-2xl"></i>&nbsp;
+        <p>Carrer Sant Antoni 47-49, L. 3 <b>C.P 43730 Móra d’Ebre</b></p>
+        <div class="sales">
+            <h4>Sales</h4>
+            <p>Sala 1 <button class="show-button" onclick="toggleDetails(this, 'sala1_4')">+</button></p>
+            <div class="hidden" id="sala1_4"></div>
+
+            <p>Sala 2 <button class="show-button" onclick="toggleDetails(this, 'sala2_4')">+</button></p>
+            <div class="hidden" id="sala2_4"></div>
+
+            <p>Sala 3 <button class="show-button" onclick="toggleDetails(this, 'sala3_4')">+</button></p>
+            <div class="hidden" id="sala3_4"></div>
+
+            <p>Sala 4 <button class="show-button" onclick="toggleDetails(this, 'sala4_4')">+</button></p>
+            <div class="hidden" id="sala4_4"></div>
+        </div>
+        <div class="aules">
+            <h4>Aules</h4>
+            <p>Aula 1 <button class="show-button" onclick="toggleDetails(this, 'aula1_4')">+</button></p>
+            <div class="hidden" id="aula1_4"></div>
+
+            <p>Aula 2 <button class="show-button" onclick="toggleDetails(this, 'aula2_4')">+</button></p>
+            <div class="hidden" id="aula2_4"></div>
+
+            <p>Aula 3 <button class="show-button" onclick="toggleDetails(this, 'aula3_4')">+</button></p>
+            <div class="hidden" id="aula3_4"></div>
+
+            <p>Aula 4 <button class="show-button" onclick="toggleDetails(this, 'aula4_4')">+</button></p>
+            <div class="hidden" id="aula4_4"></div>
+        </div>
+        <div class="despatxos">
+            <h4>Despatxos</h4>
+            <p>Despatx 1 <button class="show-button" onclick="toggleDetails(this, 'despatx1_4')">+</button></p>
+            <div class="hidden" id="despatx1_4"></div>
+
+            <p>Despatx 2 <button class="show-button" onclick="toggleDetails(this, 'despatx2_4')">+</button></p>
+            <div class="hidden" id="despatx2_4"></div>
+
+            <p>Despatx 3 <button class="show-button" onclick="toggleDetails(this, 'despatx3_4')">+</button></p>
+            <div class="hidden" id="despatx3_4"></div>
+
+            <p>Despatx 4 <button class="show-button" onclick="toggleDetails(this, 'despatx4_4')">+</button></p>
+            <div class="hidden" id="despatx4_4"></div>
+        </div>
+    </div>
+    <hr>
+</body>
+<script src="./app.js"></script>
+</html>
